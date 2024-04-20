@@ -4,10 +4,6 @@ import { Investments } from "./Investments";
 import UserInput from "./UserInput";
 import InvalidUserInput from "./InvalidUserInput";
 
-/* 
-  - The duration value represents the number of the year
-    so the default value is equals 1
-*/
 const INITIAL_INVESTMENT_INFO = {
   initialInvestment: 10000,
   annualInvestment: 1200,
