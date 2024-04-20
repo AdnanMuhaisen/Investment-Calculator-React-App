@@ -1,0 +1,112 @@
+:root {
+  --backgroundColor: #013924;
+  --userInputWidth: 450px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--backgroundColor);
+  color: #e5e7e9;
+}
+
+/* Start Header Styles  */
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header > img {
+  height: 250px;
+}
+/* End Header Styles  */
+
+/* Start User Inputs Styles */
+.user-inputs {
+  display: grid;
+  grid-template-columns: repeat(2, var(--userInputWidth));
+  gap: 35px 25px;
+  background-color: #1e8449;
+  border-radius: 5px;
+  padding: 30px;
+  justify-content: center;
+  margin-top: 25px;
+  box-shadow: 1px 1px 10px 0px #1e8449;
+}
+/* End User Inputs Styles */
+
+/* Start User Input Styles */
+.user-input {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+}
+
+.user-input > label {
+  margin-bottom: 5px;
+}
+
+input {
+  border: 0.5px solid #ccd1d1;
+  min-height: 50px;
+  min-width: 150px;
+  border-radius: 3px;
+  background-color: transparent;
+  color: #e5e7e9;
+  font-size: 20px;
+  padding: 10px;
+}
+
+input:focus {
+  animation-name: inputFocus;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+
+@keyframes inputFocus {
+  0% {
+    box-shadow: 0.25px 0.25px 1px 1px #ccd1d1;
+  }
+  25% {
+    box-shadow: 0.5px 0.5px 2px 2px #ccd1d1;
+  }
+  50% {
+    box-shadow: 0.75px 0.75px 3px 3px #ccd1d1;
+  }
+  100% {
+    box-shadow: 1px 1px 5x 5px #ccd1d1;
+  }
+}
+/* End User Input Styles */
+
+/* Start Investments Table Styles */
+table thead th {
+  color: #ccd1d1;
+  text-align: center;
+}
+
+table {
+  font-size: 20px;
+  margin-top: 25px;
+}
+
+table tr td {
+  text-align: center;
+}
+/* End Investments Table Styles */
+
+/* Start Invalid User Input  */
+.invalid-user-input {
+  text-align: center;
+  margin-top: 25px;
+  color: #1e8449;
+}
+/* End Invalid User Input  */
